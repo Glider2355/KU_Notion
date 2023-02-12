@@ -1,10 +1,10 @@
 function main () {
   // notion API
-  const notion_token = [notion_token]
-  const database_id = [database_id]
+  const notion_token = PropertiesService.getScriptProperties().getProperty('notion_token');
+  const database_id = PropertiesService.getScriptProperties().getProperty('database_id');
 
   // LINE API
-  const line_token = [line_token]
+  const line_token = PropertiesService.getScriptProperties().getProperty('line_token');
 
   // notionから今日リマインドするデータを取得する
   notion_data = getNotionData(database_id, notion_token)
