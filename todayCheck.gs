@@ -17,3 +17,4 @@ function today_check (notion_data) {
   }
   return today_data
 }
+
