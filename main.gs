@@ -1,6 +1,6 @@
 function main () {
   // notion API
-  const token = [notion_token]
+  const notion_token = [notion_token]
   const database_id = [database_id]
 
   // LINE API
@@ -13,5 +13,5 @@ function main () {
   LineReminder(notion_data, line_token)
 
   // notionのリマインドのチェックボックスを外す
-  patchCheckbox(notion_data, token)
+  patchCheckbox(notion_data, notion_token)
 }
